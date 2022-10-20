@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Urbanist', 'Poppins', sans-serif;
     background-color: #000;
+    color: #fff;
 }
 
 *::selection {
-    background-color: #7038ff;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 
 /* Custom ScrollBar*/
@@ -150,37 +151,99 @@
 
   /* End OF NAVBAR */
 
-.one {
-    margin: 0;
-    padding: 0;
+  /* MAIN */
+  .main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    position: relative;
+    height: 100vh;
+  }
+
+  .img-main {
+    height: 7.5rem;
+    margin-bottom: 0.5rem;
+    z-index: 5;
+    background-color: transparent;
+  }
+
+.main-heading {
+    color: #fff;
+    font-weight: 700;
+    width: fit-content;
+    margin-left: auto;
+    background-color: transparent;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    z-index: 5;
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    transition-duration: 0.5s;
 }
 
-h1 {
-    font-size: 10vw;
-  }
+.main-parag {    
+    font-family: 'Urbanist';
+    font-weight: 200;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 5;
+    position: relative;
+    font-size: 3vh;
+    text-align: center;
+    max-width: 80%;
+    transition-duration: 0.5s;
+}
 
-body{
-    display: grid;
-    height: 100%;
-    place-items: center;
-    /* background: #000; */
-  }
-  .text{
-    font-size: 10vh;
-    font-weight: 800;
-    outline: none;
-    background: linear-gradient(135deg, #0000FF 0%, #7300ff 25%, #7700FF 50%, #A600FF 75%, #3A00A7 100%);
-    background-size: 400%;
+/* END OF MAIN */
+
+/* START OF SECTIONS & PARAGRAPHS */
+
+.parag {
+    text-align: left;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 6%;
+}
+
+.section {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.section {
+    color: rgb(236, 236, 236);
+}
+
+.highlight {
+    background: linear-gradient(250deg, #4800FF 21%, #7700FF 50%, #3A00A7 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    animation: animate 7.5s linear infinite;
-  }
-  @keyframes animate {
-    to {
-      background-position: 400%;
-    }
-  }
+    background-clip: text;
+    color: transparent;
+}
+
+a {
+    font-size: larger;
+}
+
+b {
+    font-family: 'Poppins';
+}
+
+p {
+    font-family: 'Poppins';
+    text-align: left;
+}
+
+/* END OF SECTIONS & PARAGRAPHS */
